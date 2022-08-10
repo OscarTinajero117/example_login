@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 import 'local_widgets/body.dart';
-import 'welcome_controller.dart';
 
-class WelcomePage extends GetView<WelcomeController> {
+class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
 
   @override

@@ -21,11 +21,19 @@ class Body extends GetView<WelcomeController> {
               style: StringsValues().title(),
             ),
             SizedBox(height: Get.height * 0.05),
-            controller.img(),
+            Image.asset(
+              "assets/logo_empresa.png",
+              height: Get.height * 0.5,
+            ),
             SizedBox(height: Get.height * 0.05),
             RoundedButton(
               onPressed: controller.toLogin,
               text: 'INICIAR SESIÓN',
+            ),
+            RoundedButton(
+              onPressed: controller.toSignUp,
+              text: '¡REGISTRATE!',
+              color: Colors.grey.shade400,
             ),
           ],
         ),

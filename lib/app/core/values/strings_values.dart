@@ -42,4 +42,16 @@ class StringsValues {
       color: color,
     );
   }
+
+  TextStyle normalText({
+    FontWeight fontWeight = FontWeight.normal,
+    Color color = Colors.black,
+  }) {
+    StringsModel model = _stringServices.getStringsSize();
+    return TextStyle(
+      fontSize: model.normalText,
+      fontWeight: fontWeight,
+      color: color,
+    );
+  }
 }

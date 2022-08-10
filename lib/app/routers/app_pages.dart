@@ -2,10 +2,14 @@
 
 import 'package:get/get.dart';
 
+import '../modules/check_email/check_email_binding.dart';
+import '../modules/check_email/check_email_page.dart';
 import '../modules/home/home_binding.dart';
 import '../modules/home/home_page.dart';
 import '../modules/login/login_binding.dart';
 import '../modules/login/login_page.dart';
+import '../modules/sign_up/sign_up_binding.dart';
+import '../modules/sign_up/sign_up_page.dart';
 import '../modules/welcome/welcome_binding.dart';
 import '../modules/welcome/welcome_page.dart';
 import '../modules/splash/splash_binding.dart';
@@ -34,5 +38,14 @@ class AppPages {
       page: () => WelcomePage(),
       binding: WelcomeBinding(),
     ),
+    GetPage(
+      name: AppRoutes.SIGN_UP,
+      page: () => SignUpPage(),
+      binding: SignUpBinding(),
+    ),
+    GetPage(
+        name: AppRoutes.CHECK_EMAIL,
+        page: () => CheckEmailPage(),
+        binding: CheckEmailBinding()),
   ];
 }

@@ -3,14 +3,17 @@ import 'package:get/get.dart';
 
 class SnackBarElements {
   SnackbarController snackBarError(
-      {required String error, String? titleComplement}) {
+      {required String error, String titleComplement = ""}) {
     return Get.snackbar(
       "Error. $titleComplement",
       error.toString(),
       snackPosition: SnackPosition.BOTTOM,
       backgroundColor: Colors.red,
       colorText: Colors.white,
-      icon: const Icon(Icons.error),
+      icon: const Icon(
+        Icons.error,
+        color: Colors.white,
+      ),
       onTap: (snack) => snack.isDismissible,
     );
   }
